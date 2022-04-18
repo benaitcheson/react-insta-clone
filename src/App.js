@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { BrowserRouter as Route, Router, Routes } from 'react-router-dom';
 
 import * as ROUTES from './constants/routes';
@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
-        <Route exact path={ROUTES.LOGIN} component={<Login/>} />
+        <Route path={ROUTES.LOGIN} component={Login} />
       </Suspense>
     </Router>
   );
