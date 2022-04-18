@@ -1,9 +1,9 @@
 import { useState, useContext, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-import { FirebaseContext } from '../context/firebase';
+import { useNavigate } from 'react-router-dom';
+import FirebaseContext from '../context/firebase';
 
 export default function Login() {
-  const history = useHistory();
+  const history = useNavigate();
   const { firebase } = useContext(FirebaseContext);
 
   const [email, setEmail] = useState('');
