@@ -23,7 +23,9 @@ export default function Login() {
       <div className="flex w-3/5">
         <img src="/images/iphone-with-profile.jpg" alt="iPhone with insta app" />
       </div>
-      <div className="flex flex-col w-2/5"></div>
+      <div className="flex flex-col w-2/5">
+        <p>I will be the form</p>
+      </div>
     </div>
   );
 }
